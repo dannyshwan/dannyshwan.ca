@@ -3,8 +3,6 @@ import { Switch, Route } from 'react-router-dom'
 import { Home } from '../views/home'
 import { About } from '../views/about';
 import { Skills } from '../views/skills';
-import { Work } from '../views/work';
-import { Projects } from '../views/projects';
 
 export const Router = () => (
   <main>
@@ -12,8 +10,6 @@ export const Router = () => (
       <Route exact path='/' component={ Home }/>
       <Route path='/about' component={ About }/>
       <Route path='/skills' component={ Skills }/>
-      <Route path='/work' component={ Work }/>
-      <Route path='/projects' component={ Projects }/>
     </Switch>
   </main>
 );
