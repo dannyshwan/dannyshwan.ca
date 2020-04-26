@@ -33,7 +33,8 @@ export class About extends React.Component {
             </p>
 
             <p> I'm always up for a challenge and I believe that's what makes life exciting!
-                Outside of school, you'd probably find me working on projects, eating out with friends, or playing some futty ⚽. 
+                Outside of school, you'd probably find me working on projects, eating out with friends, or playing some futty 
+                <span role="img">⚽</span>. 
                 Just to name a few!
             </p>
 
