@@ -1,0 +1,33 @@
+li{
+   padding: 0.75% 1%;
+   display: inline-block;
+   font-size: 150%;
+}
+
+#skills{
+   width: 60vw;
+   text-align: left;
+}
+
+.categories{
+   list-style-type: none;
+
+   h1{
+      color: rgb(220, 124, 172);
+      font-size: 4.5vh;
+      margin-bottom: 2vh;
+   }
+}
+
+#coding li{
+   background-color: rgba(16, 175, 95, 0.80);
+   border-radius: 0.15em;
+   margin: 0.5% 1%;
+}
+
+#interests li{
+
+   background-color: rgba(229, 108, 108, 0.80);
+   border-radius: 0.15em;
+   margin: 0.5% 1%;
+}
