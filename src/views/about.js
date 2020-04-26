@@ -42,8 +42,6 @@ export class About extends React.Component {
               If you wish to hire me as an intern for <span style={{ color: "rgb(220, 124, 172)" }}>Fall 2020 </span>
               or just want to chat, feel free to contact me!
               </p>
-
-            <img src={require("../assets/coffee_cup.png")} style={{ height: "2vh" }} alt="coffee cup"></img> 
           </div>
         </div>
         <Footer/>
