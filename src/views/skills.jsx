@@ -3,13 +3,25 @@ import '../styles/skills.scss';
 import Lottie from 'react-lottie';
 import * as animationData from '../assets/json/developer-boy.json';
 
-const style = {
-   fontFamily: '"Ubuntu", sansSerif',
-   display: "flex",
-   minHeight: "100vh",
-   justifyContent: "center",
-   alignItems: "center",
-};
+const breakpoints = {
+   sm: 600,
+   md: 960,
+   lg: 1280,
+}
+
+function getLottieDimensions(){
+   const { innerWidth: width } = window;
+ 
+   if (width <= breakpoints.sm){
+     return 200
+   }
+   else if(width <= breakpoints.lg){
+     return 300;
+   }
+   else{
+     return 400;
+   }
+ }
 
 export class Skills extends React.Component{
    
@@ -24,7 +36,7 @@ export class Skills extends React.Component{
       };
 
       return(
-         <section style={ style }>
+         <div id="skills_section">
             <div id='skills'>
                <ul className='categories' id='coding'>
                   <h1>Skills</h1>
@@ -55,9 +67,9 @@ export class Skills extends React.Component{
                </ul>
             </div>
             <div>
-               <Lottie options={ defaultOptions } height={400} width={400}/>
+               <Lottie options={ defaultOptions } height={ getLottieDimensions() } width={ getLottieDimensions() }/>
             </div>
-         </section>
+         </div>
       );
    };
 };
