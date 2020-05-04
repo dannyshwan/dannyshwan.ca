@@ -9,25 +9,35 @@ li{
    text-align: left;
 }
 
-.categories{
-   list-style-type: none;
-
-   h1{
-      color: rgb(220, 124, 172);
-      font-size: 4.5vh;
-      margin-bottom: 2vh;
-   }
-}
-
 #coding li{
-   background-color: rgba(16, 175, 95, 0.80);
+   background-color: rgba(16, 175, 95, 0.555);
    border-radius: 0.15em;
    margin: 0.5% 1%;
 }
 
 #interests li{
 
-   background-color: rgba(229, 108, 108, 0.80);
+   background-color: rgba(236, 73, 73, 0.39);
    border-radius: 0.15em;
    margin: 0.5% 1%;
+}
+
+.categories{
+   list-style-type: none;
+
+   h1{
+      color: rgb(75, 75, 75);
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      font-family: "Bebas Neue", sans-serif;
+      letter-spacing: 2.5px;
+   }
+}
+
+.languageProficiency{
+   padding: 0.25em;
+   background-color: rgba(44, 196, 196, 0.39);
+   border-radius: 0.15em;
+   font-size: 1em;
+   display: inline-block;
 }

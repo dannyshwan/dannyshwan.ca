@@ -1,27 +1,21 @@
+#base{
+   font-family: "Ubuntu", sansSerif;
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+};
+
 .introduction{
-   display: inline-block;
-   vertical-align: middle;
-   margin: 0 2.5%;
-   width: 35%;
+   width: 35vw;
 
    h1{
-      font-size: 3.5em;
+      font-size: 3rem;
       text-align: left;
    }
 
    p{
-      font-size: 1.5em;
+      font-size: 1.5rem;
       text-align: left;
    }
-}
-
-#Picture_Of_Me{
-   max-width: 85%;
-   height: auto;
-   border-radius: 10%;
-   box-shadow: 1em 1em 0 rgba(122, 63, 181, 0.5);
-   transition: 0.3s;
-}
-#Picture_Of_Me:hover{
-   box-shadow: 0.5em 0.5em 0 rgba(122, 63, 181, 0.5);
 }
