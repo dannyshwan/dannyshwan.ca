@@ -21,16 +21,12 @@
     }
 }
 
-#links{
-    width: 100%;
-    margin-top: 2.5%;
-}
-
 .link{
-    margin: 0 2.5%;
-    padding: 0.25em 0;
+    margin: 0 2rem;
+    padding: 0.25em 0.5rem;
     font-size: 4vh;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 2.5px;
     position: relative;
     user-select: none;
     outline: none;
@@ -47,7 +43,7 @@
     content: "";
     position: absolute;
     left: 50%;
-    bottom: 10px;
+    bottom: 12.5px;
     z-index: -1;
     width: 0;
     height: 0.3em;
