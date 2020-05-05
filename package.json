@@ -9,9 +9,12 @@
     "node": "10.15.3"
   },
   "dependencies": {
-    "node-sass": "^4.14.0",
+    "@ant-design/icons": "^4.1.0",
+    "antd": "^4.2.0",
+    "node-sass": "^4.14.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-lottie": "^1.2.3",
     "react-particles-js": "^2.7.0",
     "react-router-dom": "^5.0.1",
     "react-scripts": "^3.4.1"

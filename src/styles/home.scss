@@ -1,80 +1,105 @@
 #home{
-    display: flex;
     font-size: 5em;
-    height: 100vh;
-    justify-content: center;
-    font-family: 'Ubuntu', sans-serif;
-    align-items: center;
-    flex-flow: column;
+    min-height: 100vh;
     text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
 
-    h1{
-        font-size: 14vh;
-    }
+#title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    min-height: inherit;
 
-    h3{
-        font-size: 3vh;
+    @media screen and (max-width: 1200px){
+        flex-direction: column;
     }
+}
+
+#name{
+    height: auto;
 
     p{
-        font-size: 3vh;
+        font-size: 11vw;
+
+        @media screen and (max-width: 1200px){
+            font-size: 12rem;
+        }
+
+        @media screen and (max-width: 960px){
+            font-size: 8rem;
+        }
+
+        @media screen and (max-width: 600px){
+            font-size: 4rem;
+        }
     }
 }
 
-#links{
-    width: 100%;
-    margin-top: 2.5%;
-}
+#brush_stroke{
+    background: url('../assets/img/brush-stroke.png');
+    background-repeat: no-repeat;
+    background-size: 100% 95%;
+    padding: 1rem 7.5rem;
 
-.link{
-    margin: 0 2.5%;
-    padding: 0.25em 0;
-    font-size: 4vh;
-    font-family: 'Ubuntu', sans-serif;
-    position: relative;
-    user-select: none;
-    outline: none;
-    color: whitesmoke;
-    text-decoration: none;
-
-}
-
-.link:hover{
-    text-decoration: none;
-    cursor: pointer;
-}
-.link::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    width: 0;
-    height: 0.2em;
-    opacity: 0;
-    background:rgb(108, 188, 148);
-    transition: all 400ms cubic-bezier(0.5, 1.6, 0.15, 0.9);
-}
-.link:hover::after {
-    left: 0;
-    width: 100%;
-    opacity: 1;
+    @media screen and (max-width: 600px){
+        padding: 1rem 3rem;
+    }
 }
 
 #external_links{
     width:100%;
-}
 
-.image_links{
-    margin: 0 1%;
-
-    img{
-        height: 3.5vh;
-        opacity: 0.5;
-        transition: 0.3s;
+    @media screen and (max-width: 1200px){
+        display: none;
     }
 }
 
-.image_links img:hover{
+#self-portrait{
+    width: 30vw;
+    margin-left: 2.5rem;
+    border-radius: 2rem;
+    box-shadow: 10px 10px rgba(122, 63, 181, 0.5);
+    transition: box-shadow 0.3s ease;
+
+    @media screen and (max-width: 1200px){
+        margin-left: 0;
+        transform: translateY(-100px);
+        width: 30rem;
+    }
+
+    @media screen and (max-width: 960px){
+        width: 25rem;
+    }
+
+    @media screen and (max-width: 600px){
+        transform: translateY(-50px);
+        width: 17.5rem;
+    }
+}
+
+#self-portrait:hover{
+    box-shadow: 5px 5px rgba(122, 63, 181, 0.5);
+}
+
+.image_links{
+    margin: 0 1rem;
+}
+
+.icons{
+    color: rgb(24, 24, 24);
+    opacity: 0.75;
+    font-size: 2rem;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.icons:hover{
     opacity: 1;
-    transform: translateY(-10%);
+    transform: translateY(-5px);
+}
+
+@font-face{
+    font-family: "Unforgotton";
+    src: url("../assets/fonts/unforgotten.regular.ttf");
 }

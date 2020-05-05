@@ -1,12 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Ubuntu:R|Mrs+Sheppards|Righteous');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:R|Bebas+Neue|Mrs+Sheppards|Righteous');
 
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
+  
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: graysscale;
+  background-color: whitesmoke;
+  color: rgb(50, 50, 50);
 }
 
 code {

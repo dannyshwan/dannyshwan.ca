@@ -1,13 +1,13 @@
 import React from 'react';
-import { ParticlesBackground } from './components/particles'
 import { Router } from './components/router';
+import { Header } from './components/header';
 
 export class App extends React.Component{
 
    render() {
       return(
          <div>
-            <ParticlesBackground/>
+            <Header/>
             <Router/>
          </div>
       );
