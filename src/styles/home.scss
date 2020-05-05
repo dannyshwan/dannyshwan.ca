@@ -1,28 +1,86 @@
 #home{
-    display: flex;
     font-size: 5em;
-    height: 100vh;
-    justify-content: center;
-    font-family: 'Ubuntu', sans-serif;
-    align-items: center;
-    flex-flow: column;
+    min-height: 100vh;
     text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
 
-    h1{
-        font-size: 14vh;
-    }
+#title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    min-height: inherit;
 
-    h3{
-        font-size: 3vh;
+    @media screen and (max-width: 1200px){
+        flex-direction: column;
     }
+}
+
+#name{
+    height: auto;
 
     p{
-        font-size: 3vh;
+        font-size: 11vw;
+
+        @media screen and (max-width: 1200px){
+            font-size: 12rem;
+        }
+
+        @media screen and (max-width: 960px){
+            font-size: 8rem;
+        }
+
+        @media screen and (max-width: 600px){
+            font-size: 4rem;
+        }
+    }
+}
+
+#brush_stroke{
+    background: url('../assets/img/brush-stroke.png');
+    background-repeat: no-repeat;
+    background-size: 100% 95%;
+    padding: 1rem 7.5rem;
+
+    @media screen and (max-width: 600px){
+        padding: 1rem 3rem;
     }
 }
 
 #external_links{
     width:100%;
+
+    @media screen and (max-width: 1200px){
+        display: none;
+    }
+}
+
+#self-portrait{
+    width: 30vw;
+    margin-left: 2.5rem;
+    border-radius: 2rem;
+    box-shadow: 10px 10px rgba(122, 63, 181, 0.5);
+    transition: box-shadow 0.3s ease;
+
+    @media screen and (max-width: 1200px){
+        margin-left: 0;
+        transform: translateY(-100px);
+        width: 30rem;
+    }
+
+    @media screen and (max-width: 960px){
+        width: 25rem;
+    }
+
+    @media screen and (max-width: 600px){
+        transform: translateY(-50px);
+        width: 17.5rem;
+    }
+}
+
+#self-portrait:hover{
+    box-shadow: 5px 5px rgba(122, 63, 181, 0.5);
 }
 
 .image_links{
@@ -39,4 +97,9 @@
 .icons:hover{
     opacity: 1;
     transform: translateY(-5px);
+}
+
+@font-face{
+    font-family: "Unforgotton";
+    src: url("../assets/fonts/unforgotten.regular.ttf");
 }

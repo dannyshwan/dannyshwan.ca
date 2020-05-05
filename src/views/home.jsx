@@ -2,15 +2,13 @@ import React from 'react';
 import '../styles/home.scss';
 import { InstagramOutlined, LinkedinFilled, MailOutlined, GithubOutlined } from '@ant-design/icons';
 
-const headers = {
-	margin: `1vh 0`
-};
-
 const homeFooter = {
-	position:"absolute",
+	position:"fixed",
    bottom: "0",
 	width: "100%",
 	height: "auto",
+	overflow: "hidden",
+	background: "whitesmoke",
 	paddingBottom: "1rem",
 };
 
@@ -18,22 +16,23 @@ export class Home extends React.Component{
 
   	render(){
     	return (
-     	 	<section>
-				<div id='home'>
-					<p style={ headers }>hey there, I'm</p>
-					<h1 style={ headers }><span style={{ color: "rgb(246, 209, 63)", fontFamily: '"Righteous", sansSerif' }}>Daniel Shwan</span></h1>
-					<h3 style={ headers }>~ Welcome to my webpage ~</h3>
-					<div style={ homeFooter }>
-						<div id='external_links'>
-							<a className='image_links' href='https://www.instagram.com/daniel.shwan/'><InstagramOutlined className="icons"/></a>
-							<a className='image_links' href='https://github.com/dannyshwan'><GithubOutlined className="icons"/></a>
-							<a className='image_links' href='https://www.linkedin.com/in/danielshwan/'><LinkedinFilled className="icons"/></a>
-							<a className='image_links' href='mailto:dannyshwan@gmail.com'><MailOutlined className="icons"/></a>
-						</div>
-						<p style={{ fontSize: "1rem" }}> Made with ❤ by Daniel Shwan</p>
+     	 	<div id='home'>
+				<div id="title">
+					<div id="name">
+						<p style={{fontFamily: "Unforgotton"}}><span id="brush_stroke">Daniel Shwan</span></p>
 					</div>
+					<img id="self-portrait" src={require("../assets/img/me.jpg")} alt="Picture_of_Me"/>
 				</div>
-      	</section>
+				<div style={ homeFooter }>
+					<div id='external_links'>
+						<a className='image_links' href='https://www.instagram.com/daniel.shwan/'><InstagramOutlined className="icons"/></a>
+						<a className='image_links' href='https://github.com/dannyshwan'><GithubOutlined className="icons"/></a>
+						<a className='image_links' href='https://www.linkedin.com/in/danielshwan/'><LinkedinFilled className="icons"/></a>
+						<a className='image_links' href='mailto:dannyshwan@gmail.com'><MailOutlined className="icons"/></a>
+					</div>
+					<p style={{ fontSize: "1rem" }}> Made with ❤ by Daniel Shwan</p>
+				</div>
+      	</div>
     	);
   	}
 }

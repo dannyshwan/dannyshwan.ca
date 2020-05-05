@@ -41,7 +41,7 @@ export class About extends React.Component {
           <Lottie options={ defaultOptions } height={ getLottieDimensions() } width={ getLottieDimensions() }/>
         </div>
         <div className='introduction'>
-          <h1><span style={{ color:"rgb(57, 156, 255)" }}>hello!</span> I'm <span style={{ color:"rgb(255, 165, 74)" }}>Daniel</span> ✌️</h1>
+          <h1><span style={{ color:"rgb(57, 156, 255)" }}>hey there!</span> I'm <span style={{ color:"rgb(255, 165, 74)" }}>Daniel</span> ✌️</h1>
 
           <p> I'm a Computer Engineering student at the University of Ottawa. I have a passion for trying new technologies, design, and exploring new innovative ideas!
           </p>
