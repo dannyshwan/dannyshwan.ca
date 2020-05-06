@@ -2,7 +2,7 @@ import React from 'react'
 import { Switch, Route } from 'react-router-dom'
 import { Home } from '../views/home'
 import { About } from '../views/about';
-import { Experience } from '../views/Experience';
+import { Experience } from '../views/experience';
 import { Skills } from '../views/skills';
 
 export const Router = () => (
