@@ -1,11 +1,4 @@
 #base{
-   font-family: "Ubuntu", sansSerif;
-   min-height: 87.5vh;
-   height: auto;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-
    @media screen and (max-width: 1200px){
       flex-direction: column;
    }

@@ -34,6 +34,7 @@ class Header extends React.Component{
                <div id='links'>
                   <Link className='link' to='/about'>About</Link>
                   <Link className='link' to='/skills'>Skills</Link>
+                  <Link className='link' to='/experience'>Experience</Link>
                   <a className='link' href={ pdf } target="_blank" rel="noopener noreferrer">Resume</a>
                </div>
             </div>
@@ -49,6 +50,7 @@ class Header extends React.Component{
                   <li><Link className="mobile_links" to='/' onClick={this.closeMobileNav}>HOME</Link></li>
                   <li><Link className="mobile_links" to='/about' onClick={this.closeMobileNav}>ABOUT</Link></li>
                   <li><Link className="mobile_links" to='/skills' onClick={this.closeMobileNav}>SKILLS</Link></li>
+                  <li><Link className="mobile_links" to='/experience' onClick={this.closeMobileNav}>EXPERIENCE</Link></li>
                   <li><a className="mobile_links" href={ pdf } target="_blank" rel="noopener noreferrer">RESUME</a></li>
                </ul>
                <div id="mobile_external_links">
