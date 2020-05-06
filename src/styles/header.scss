@@ -1,13 +1,18 @@
 #header{
    display: flex;
    align-items: center;
-   position: fixed;
-   top: 0;
    width: 100%;
-   height: 12.5vh;
    z-index: 1;
    background-color: whitesmoke;
+}
 
+#web_navigation{
+   position: fixed;
+   top: 0;
+   display: inherit;
+   align-items: inherit;
+   height: 12.5vh;
+   
    @media screen and (max-width: 1200px){
       display: none;
    }
@@ -29,12 +34,83 @@
 
 #links{
    position: absolute;
-   display: flex;
-   align-items: center;
+   display: inherit;
+   align-items: inherit;
    right: 0;
    top: 0;
    margin-right: 2rem;
    height: 100%;
+}
+
+#mobile_navigation{
+   min-height: 100vh;
+   background: whitesmoke;
+   display: flex;
+   position: fixed; /* Stay in place */
+   z-index: 1; /* Sit on top */
+   left: 0;
+   top: 0;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   text-align: center;
+   overflow-x: hidden; /* Disable horizontal scroll */
+   transition: 0.5s ease;
+
+   @media screen and (min-width: 1200px){
+      display: none;
+   }
+}
+
+#mobile_links_ul{
+   padding: 0;
+   
+   li{
+      display: block;
+      padding: 1rem 0;
+   }
+
+}
+
+#mobile_external_links{
+   margin-top: 25px;
+   height: 7vh;
+   overflow: hidden;
+   transition: opacity 0.3s ease;
+
+   @media screen and (max-width: 960px){
+      height: 4.5vh;
+   }
+
+   @media screen and (max-width: 960px){
+      height: 4.5vh;
+   }
+}
+
+#mobile_nav_trigger{
+   opacity: 1;
+   transition: opacity 0.2 ease;
+}
+
+#mobile_nav_trigger{
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 4rem;
+   transform: translate(25px,25px);
+   transition: opacity 0.25s ease;
+
+   @media screen and (max-width: 960px){
+      width: 3rem;
+   }
+
+   @media screen and (max-width: 600px){
+      width: 2rem;
+   }
+}
+
+#mobile_nav_trigger:hover{
+   cursor: pointer;
 }
 
 .link{
@@ -47,6 +123,7 @@
    user-select: none;
    outline: none;
    color: rgb(24, 24, 24);
+   z-index: 2;
    text-decoration: none;
 }
 
@@ -67,4 +144,51 @@
    left: 0;
    width: 100%;
    opacity: 1;
+}
+
+.mobile_links{
+   color: rgb(24, 24, 24);
+   font-family: "persona5";
+   letter-spacing: 5px;
+   text-decoration: none;
+   font-size: 6.5rem;
+
+   @media screen and (max-width: 960px){
+      font-size: 5rem;
+   }
+
+   @media screen and (max-width: 600px){
+      font-size: 3rem;
+   }
+}
+
+.image_links_mobile{
+   margin: 0 2rem;
+   @media screen and (max-width: 960px){
+      margin: 0 1rem;
+   }
+}
+
+.mobile_icon{
+   color: rgb(24, 24, 24);
+   opacity: 0.75;
+   font-size: 3.5rem;
+   transition: opacity 0.3s ease;
+
+   @media screen and (max-width: 960px){
+      font-size: 3rem;
+   }
+
+   @media screen and (max-width: 600px){
+      font-size: 2rem;
+   }
+}
+
+.mobile_icon:hover{
+   opacity: 1;
+}
+
+@font-face{
+   font-family: "persona5";
+   src: url('../assets/fonts/persona5.ttf');
 }

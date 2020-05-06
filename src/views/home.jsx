@@ -3,7 +3,7 @@ import '../styles/home.scss';
 import { InstagramOutlined, LinkedinFilled, MailOutlined, GithubOutlined } from '@ant-design/icons';
 
 const homeFooter = {
-	position:"fixed",
+	position:"relative",
    bottom: "0",
 	width: "100%",
 	height: "auto",
