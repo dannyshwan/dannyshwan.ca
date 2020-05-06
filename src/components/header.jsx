@@ -8,16 +8,10 @@ class Header extends React.Component{
 
    state = {
       navWidth: "0",
-      menuOpened: false,
-      showLinks: 0
+      menuOpened: false
    }
 
    openMobileNav = () => {
-      setTimeout(()=>{
-         this.setState({
-            showLinks: 1
-         })
-      }, 800);
 
       this.setState({
          navWidth: "100%",
@@ -29,7 +23,6 @@ class Header extends React.Component{
       this.setState({
          navWidth: "0",
          menuOpened: false,
-         showLinks: 0
       });
    };
 
@@ -58,7 +51,7 @@ class Header extends React.Component{
                   <li><Link className="mobile_links" to='/skills' onClick={this.closeMobileNav}>SKILLS</Link></li>
                   <li><a className="mobile_links" href={ pdf } target="_blank" rel="noopener noreferrer">RESUME</a></li>
                </ul>
-               <div id="mobile_external_links" style={{ opacity: this.state.showLinks}}>
+               <div id="mobile_external_links">
 						<a className='image_links_mobile' href='https://www.instagram.com/daniel.shwan/'><InstagramOutlined className="mobile_icon"/></a>
 						<a className='image_links_mobile' href='https://github.com/dannyshwan'><GithubOutlined className="mobile_icon"/></a>
 						<a className='image_links_mobile' href='https://www.linkedin.com/in/danielshwan/'><LinkedinFilled className="mobile_icon"/></a>

@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/about.scss';
-import Lottie from 'react-lottie';
+import Lottie from 'react-lottie-wrapper';
 import * as animationData from '../assets/json/soccer.json';
 
 const breakpoints = {
@@ -36,7 +36,7 @@ export class About extends React.Component {
     };
 
     return(
-      <div id="base">
+      <section id="base">
         <div id="lottie-soccer">
           <Lottie options={ defaultOptions } height={ getLottieDimensions() } width={ getLottieDimensions() }/>
         </div>
@@ -57,7 +57,7 @@ export class About extends React.Component {
             or just want to chat, feel free to contact me!
             </p>
         </div>
-      </div>
+      </section>
     );
   };
 };

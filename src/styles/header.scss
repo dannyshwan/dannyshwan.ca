@@ -3,7 +3,7 @@
    align-items: center;
    width: 100%;
    z-index: 1;
-   background-color: whitesmoke;
+   height: 12.5vh;
 }
 
 #web_navigation{
@@ -11,7 +11,6 @@
    top: 0;
    display: inherit;
    align-items: inherit;
-   height: 12.5vh;
    
    @media screen and (max-width: 1200px){
       display: none;
@@ -43,18 +42,18 @@
 }
 
 #mobile_navigation{
-   min-height: 100vh;
+   height: 100%;
    background: whitesmoke;
    display: flex;
-   position: fixed; /* Stay in place */
-   z-index: 1; /* Sit on top */
-   left: 0;
+   position: fixed;
+   z-index: 1; 
    top: 0;
+   left: 0;
    justify-content: center;
    align-items: center;
    flex-direction: column;
    text-align: center;
-   overflow-x: hidden; /* Disable horizontal scroll */
+   overflow-x: hidden;
    transition: 0.5s ease;
 
    @media screen and (min-width: 1200px){
@@ -74,16 +73,17 @@
 
 #mobile_external_links{
    margin-top: 25px;
-   height: 7vh;
+   height: 6vh;
+   min-width: 100%;
    overflow: hidden;
    transition: opacity 0.3s ease;
 
    @media screen and (max-width: 960px){
-      height: 4.5vh;
+      height: 5vh;
    }
 
-   @media screen and (max-width: 960px){
-      height: 4.5vh;
+   @media screen and (max-width: 600px){
+      height: 4vh;
    }
 }
 
@@ -96,12 +96,12 @@
    position: fixed;
    top: 0;
    left: 0;
-   width: 4rem;
+   width: 3rem;
    transform: translate(25px,25px);
    transition: opacity 0.25s ease;
 
    @media screen and (max-width: 960px){
-      width: 3rem;
+      width: 2.5rem;
    }
 
    @media screen and (max-width: 600px){
@@ -151,10 +151,10 @@
    font-family: "persona5";
    letter-spacing: 5px;
    text-decoration: none;
-   font-size: 6.5rem;
+   font-size: 5rem;
 
    @media screen and (max-width: 960px){
-      font-size: 5rem;
+      font-size: 4rem;
    }
 
    @media screen and (max-width: 600px){
@@ -172,15 +172,15 @@
 .mobile_icon{
    color: rgb(24, 24, 24);
    opacity: 0.75;
-   font-size: 3.5rem;
+   font-size: 6vh;
    transition: opacity 0.3s ease;
 
    @media screen and (max-width: 960px){
-      font-size: 3rem;
+      font-size: 5vh;
    }
 
    @media screen and (max-width: 600px){
-      font-size: 2rem;
+      font-size: 4vh;
    }
 }
 

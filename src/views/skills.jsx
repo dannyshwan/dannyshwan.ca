@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/skills.scss';
-import Lottie from 'react-lottie';
+import Lottie from 'react-lottie-wrapper';
 import * as animationData from '../assets/json/developer-boy.json';
 
 const breakpoints = {
@@ -36,7 +36,7 @@ export class Skills extends React.Component{
       };
 
       return(
-         <div id="skills_section">
+         <section id="skills_section">
             <div id='skills'>
                <ul className='categories' id='coding'>
                   <h1>Skills</h1>
@@ -69,7 +69,7 @@ export class Skills extends React.Component{
             <div>
                <Lottie options={ defaultOptions } height={ getLottieDimensions() } width={ getLottieDimensions() }/>
             </div>
-         </div>
+         </section>
       );
    };
 };

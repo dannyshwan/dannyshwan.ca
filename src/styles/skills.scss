@@ -14,7 +14,7 @@ li{
 
 #skills_section{
    font-family: "Ubuntu", sansSerif;
-   min-height: 100vh;
+   min-height: 87.5vh;
    height: auto;
    display: flex;
    justify-content: center;
@@ -64,6 +64,13 @@ li{
    @media screen and ( max-width: 600px ){
       h1{
          font-size: 1.5rem;
+         letter-spacing: 2px;
+      }
+   }
+
+   @media screen and ( max-width: 450px ){
+      h1{
+         font-size: 1rem;
          letter-spacing: 2px;
       }
    }
