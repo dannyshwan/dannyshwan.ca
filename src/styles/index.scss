@@ -17,6 +17,11 @@ code {
     monospace;
 }
 
-.image_links{
-  margin: 0 2rem;
+section{
+  font-family: "Ubuntu", sansSerif;
+  min-height: 87.5vh;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

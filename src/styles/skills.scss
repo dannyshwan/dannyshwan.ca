@@ -1,24 +1,4 @@
-li{
-   padding: 0.75% 1%;
-   display: inline-block;
-   font-size: 1.5rem;
-   
-   @media screen and ( max-width: 1024px ){
-      font-size: 1rem;
-   }
-
-   @media screen and ( max-width: 600px ){
-      font-size: 0.75rem;
-   }
-}
-
 #skills_section{
-   font-family: "Ubuntu", sansSerif;
-   min-height: 87.5vh;
-   height: auto;
-   display: flex;
-   justify-content: center;
-   align-items: center;
 
    @media screen and ( max-width: 1024px ){
       flex-direction: column;
@@ -82,4 +62,18 @@ li{
    border-radius: 0.15em;
    font-size: 1em;
    display: inline-block;
+}
+
+li{
+   padding: 0.75% 1%;
+   display: inline-block;
+   font-size: 1.5rem;
+   
+   @media screen and ( max-width: 1024px ){
+      font-size: 1rem;
+   }
+
+   @media screen and ( max-width: 600px ){
+      font-size: 0.75rem;
+   }
 }
