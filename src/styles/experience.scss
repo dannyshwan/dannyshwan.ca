@@ -1,0 +1,16 @@
+#experience_header{
+   animation: hovering 1.5s ease;
+   animation-iteration-count: infinite;
+}
+
+@keyframes hovering{
+   0%{
+      transform: translateX(0);
+   }
+   50%{
+      transform: translateY(-10px);
+   }
+   100%{
+      transform: translateX(0);
+   }
+}
