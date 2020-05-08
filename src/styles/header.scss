@@ -7,9 +7,10 @@
 }
 
 #web_navigation{
-   position: fixed;
    top: 0;
    display: inherit;
+   height: inherit;
+   background: whitesmoke;
    align-items: inherit;
    
    @media screen and (max-width: 1200px){
