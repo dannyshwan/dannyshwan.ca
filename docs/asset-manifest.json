@@ -1,26 +1,32 @@
 {
   "files": {
-    "main.css": "/static/css/main.fb5e1acf.chunk.css",
-    "main.js": "/static/js/main.fc0b2499.chunk.js",
-    "main.js.map": "/static/js/main.fc0b2499.chunk.js.map",
+    "main.css": "/static/css/main.c780970f.chunk.css",
+    "main.js": "/static/js/main.46c8cdcd.chunk.js",
+    "main.js.map": "/static/js/main.46c8cdcd.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.355bdd08.js",
     "runtime-main.js.map": "/static/js/runtime-main.355bdd08.js.map",
-    "static/js/2.ebafe2e8.chunk.js": "/static/js/2.ebafe2e8.chunk.js",
-    "static/js/2.ebafe2e8.chunk.js.map": "/static/js/2.ebafe2e8.chunk.js.map",
+    "static/js/2.d25da836.chunk.js": "/static/js/2.d25da836.chunk.js",
+    "static/js/2.d25da836.chunk.js.map": "/static/js/2.d25da836.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.0b405e314d5ec8e3ab17abea6fe938d7.js": "/precache-manifest.0b405e314d5ec8e3ab17abea6fe938d7.js",
+    "precache-manifest.29e472243554d6b047a5c98b56eb12f9.js": "/precache-manifest.29e472243554d6b047a5c98b56eb12f9.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.fb5e1acf.chunk.css.map": "/static/css/main.fb5e1acf.chunk.css.map",
-    "static/js/2.ebafe2e8.chunk.js.LICENSE.txt": "/static/js/2.ebafe2e8.chunk.js.LICENSE.txt",
+    "static/css/main.c780970f.chunk.css.map": "/static/css/main.c780970f.chunk.css.map",
+    "static/js/2.d25da836.chunk.js.LICENSE.txt": "/static/js/2.d25da836.chunk.js.LICENSE.txt",
     "static/media/Daniel_Shwan.pdf": "/static/media/Daniel_Shwan.0d11afb9.pdf",
     "static/media/home.scss": "/static/media/unforgotten.regular.0e4eebb3.ttf",
     "static/media/me.jpg": "/static/media/me.cc5ac81b.jpg",
-    "static/media/header.scss": "/static/media/persona5.13fd6f34.ttf"
+    "static/media/mitel.png": "/static/media/mitel.87d42e18.png",
+    "static/media/mitel_thumbnail.jpg": "/static/media/mitel_thumbnail.43b18f75.jpg",
+    "static/media/opentext.png": "/static/media/opentext.2f4eaf38.png",
+    "static/media/opentext_thumbnail.jpg": "/static/media/opentext_thumbnail.7ddede46.jpg",
+    "static/media/header.scss": "/static/media/persona5.13fd6f34.ttf",
+    "static/media/sesa.png": "/static/media/sesa.02bddd83.png",
+    "static/media/sesa_thumbnail.png": "/static/media/sesa_thumbnail.e1ce3196.png"
   },
   "entrypoints": [
     "static/js/runtime-main.355bdd08.js",
-    "static/js/2.ebafe2e8.chunk.js",
-    "static/css/main.fb5e1acf.chunk.css",
-    "static/js/main.fc0b2499.chunk.js"
+    "static/js/2.d25da836.chunk.js",
+    "static/css/main.c780970f.chunk.css",
+    "static/js/main.46c8cdcd.chunk.js"
   ]
 }
