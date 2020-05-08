@@ -8,3 +8,5 @@
 
     Made with love, Daniel Shwan ☕
 ```
+
+DS Favicon Icon made by [Freepik](https://www.flaticon.com/authors/freepik) from www.flaticon.com

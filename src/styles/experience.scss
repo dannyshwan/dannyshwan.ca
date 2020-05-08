@@ -1,6 +1,61 @@
 #experience_header{
+   margin-bottom: 2rem;
    animation: hovering 1.5s ease;
    animation-iteration-count: infinite;
+}
+
+#polaroids{
+   width: 80%;
+   text-align: center;
+}
+
+#logo{
+   width: 15rem;
+   padding: 20px;
+   @media screen and (max-width: 600px){
+      width: 10rem;
+   }
+}
+
+#postcard{
+   display: flex;
+   min-height: 15rem;
+   align-items: center;
+   
+   p{
+      padding: 20px;
+      width: 15rem;
+      font-family: 'Ubuntu', sans-serif;
+      border-left: 2px solid rgb(0, 135, 168);
+
+      @media screen and (max-width: 600px){
+         border-top: 2px solid rgb(0, 135, 168);
+         border-left: 0;
+      }
+   }
+
+   @media screen and (max-width: 600px){
+      flex-direction: column;
+   }
+}
+
+.info_card{
+   width: 25rem;
+   font-family: 'Ubuntu', sans-serif;
+
+   @media screen and (max-width: 600px){
+      width: 20rem;
+   }
+}
+
+.info_card:hover{
+   cursor: pointer;
+   
+}
+
+.typography p{
+   font-family: 'Catamaran', sans-serif;
+   margin: 5px;
 }
 
 @keyframes hovering{
