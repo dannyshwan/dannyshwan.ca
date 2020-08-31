@@ -56,7 +56,7 @@
 }
 
 #self-portrait{
-    width: 30vw;
+    width: 25vw;
     margin-left: 2.5rem;
     border-radius: 2rem;
     box-shadow: 10px 10px rgba(122, 63, 181, 0.5);
@@ -65,16 +65,16 @@
     @media screen and (max-width: 1200px){
         margin-left: 0;
         transform: translateY(-100px);
-        width: 27.5rem;
+        width: 24.5rem;
     }
 
     @media screen and (max-width: 960px){
         transform: translateY(-50px);
-        width: 22rem;
+        width: 19rem;
     }
 
     @media screen and (max-width: 600px){
-        width: 17.5rem;
+        width: 15.5rem;
     }
 }
 
