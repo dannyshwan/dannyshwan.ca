@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.b91fbafc.chunk.css",
-    "main.js": "/static/js/main.9b773b7a.chunk.js",
-    "main.js.map": "/static/js/main.9b773b7a.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.355bdd08.js",
-    "runtime-main.js.map": "/static/js/runtime-main.355bdd08.js.map",
-    "static/js/2.d25da836.chunk.js": "/static/js/2.d25da836.chunk.js",
-    "static/js/2.d25da836.chunk.js.map": "/static/js/2.d25da836.chunk.js.map",
+    "main.css": "/static/css/main.166ce28d.chunk.css",
+    "main.js": "/static/js/main.29659d29.chunk.js",
+    "main.js.map": "/static/js/main.29659d29.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.866ef65a.js",
+    "runtime-main.js.map": "/static/js/runtime-main.866ef65a.js.map",
+    "static/js/2.3926a37d.chunk.js": "/static/js/2.3926a37d.chunk.js",
+    "static/js/2.3926a37d.chunk.js.map": "/static/js/2.3926a37d.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.de0c00df62a05c622690f6ceadccf10f.js": "/precache-manifest.de0c00df62a05c622690f6ceadccf10f.js",
+    "precache-manifest.fec2783a2c36195ab0436b1f904de6c6.js": "/precache-manifest.fec2783a2c36195ab0436b1f904de6c6.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.b91fbafc.chunk.css.map": "/static/css/main.b91fbafc.chunk.css.map",
-    "static/js/2.d25da836.chunk.js.LICENSE.txt": "/static/js/2.d25da836.chunk.js.LICENSE.txt",
-    "static/media/Daniel_Shwan.pdf": "/static/media/Daniel_Shwan.e1cda452.pdf",
+    "static/css/main.166ce28d.chunk.css.map": "/static/css/main.166ce28d.chunk.css.map",
+    "static/js/2.3926a37d.chunk.js.LICENSE.txt": "/static/js/2.3926a37d.chunk.js.LICENSE.txt",
+    "static/media/Daniel_Shwan.pdf": "/static/media/Daniel_Shwan.a96f70f0.pdf",
     "static/media/home.scss": "/static/media/unforgotten.regular.0e4eebb3.ttf",
     "static/media/me.jpg": "/static/media/me.a2f2a2ee.jpg",
     "static/media/mitel.png": "/static/media/mitel.87d42e18.png",
@@ -24,9 +24,9 @@
     "static/media/sesa_thumbnail.png": "/static/media/sesa_thumbnail.e1ce3196.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.355bdd08.js",
-    "static/js/2.d25da836.chunk.js",
-    "static/css/main.b91fbafc.chunk.css",
-    "static/js/main.9b773b7a.chunk.js"
+    "static/js/runtime-main.866ef65a.js",
+    "static/js/2.3926a37d.chunk.js",
+    "static/css/main.166ce28d.chunk.css",
+    "static/js/main.29659d29.chunk.js"
   ]
 }
