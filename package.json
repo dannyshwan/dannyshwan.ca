@@ -6,7 +6,7 @@
   "version": "1.0.0",
   "engines": {
     "npm": "6.10.2",
-    "node": "10.15.3"
+    "node": "12.18.3"
   },
   "dependencies": {
     "@ant-design/icons": "^4.1.0",

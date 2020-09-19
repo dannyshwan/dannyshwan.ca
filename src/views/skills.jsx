@@ -9,6 +9,22 @@ const breakpoints = {
    lg: 1280,
 }
 
+const skills = [
+   "JavaScript",
+   "TypeScript",
+   "Java",
+   "Python",
+   "C",
+   "HTML5/CSS3",
+   "PHP",
+   "AWS",
+   "React.js",
+   "Vue.js",
+   "Angular.js",
+   "Node.js",
+   "Git",
+]
+
 function getLottieDimensions(){
    const { innerWidth: width } = window;
  
@@ -40,9 +56,13 @@ export class Skills extends React.Component{
             <div id='skills'>
                <ul className='categories' id='coding'>
                   <h1>Skills</h1>
-                     <li>JavaScript</li><li>TypeScript</li><li>Java</li><li>Python</li>
-                     <li>C</li><li>AWS</li><li>React.js</li><li>Vue.js</li><li>Node.js</li>
-                     <li>Git</li><li>JQuery</li><li>HTML5/CSS3</li><li>Android</li><li>PHP</li>
+                  {
+                     skills.map((skill) => {
+                        return(
+                           <li>{skill}</li>
+                        );
+                     })
+                  }
                </ul>
                <ul className='categories' id='lingustics'>
                   <h1>Linguistics</h1>
@@ -61,7 +81,7 @@ export class Skills extends React.Component{
                </ul>
                <ul className='categories' id='interests'>
                   <h1>Interests</h1>
-                  <li>UI/UX Design</li><li>Artificial Intelligence</li><li>Full Stack Development</li>
+                  <li>Data Science</li><li>Machine Learning</li><li>Full Stack Development</li>
                   <li>Product Development</li><li>Soccer</li><li>Volleyball</li><li>Running</li>
                   <li>Cooking</li><li>Sketching</li>
                </ul>

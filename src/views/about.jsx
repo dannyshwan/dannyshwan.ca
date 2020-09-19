@@ -53,7 +53,7 @@ export class About extends React.Component {
           </p>
 
           <p> I'm always open to meeting new people and seeking new opportunites to learn and expand what I know! 
-            If you wish to hire me as an intern for <span style={{ color: "rgb(180, 93, 137)" }}>Fall 2020 </span>
+            If you wish to hire me as an intern for <span style={{ color: "rgb(180, 93, 137)" }}>Winter and Summer 2021 </span>
             or just want to chat, feel free to contact me!
             </p>
         </div>
