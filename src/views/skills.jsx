@@ -21,8 +21,18 @@ const skills = [
    "React.js",
    "Vue.js",
    "Angular.js",
-   "Node.js",
-   "Git",
+   "Node.js"
+]
+
+const interests = [
+   "Data Science",
+   "Full-Stack Development",
+   "Product Development",
+   "Soccer",
+   "Volleyball",
+   "Running",
+   "Cooking",
+   "Sketching"
 ]
 
 function getLottieDimensions(){
@@ -81,9 +91,13 @@ export class Skills extends React.Component{
                </ul>
                <ul className='categories' id='interests'>
                   <h1>Interests</h1>
-                  <li>Data Science</li><li>Machine Learning</li><li>Full Stack Development</li>
-                  <li>Product Development</li><li>Soccer</li><li>Volleyball</li><li>Running</li>
-                  <li>Cooking</li><li>Sketching</li>
+                  {
+                     interests.map((interest) => {
+                        return(
+                           <li>{interest}</li>
+                        );
+                     })
+                  }
                </ul>
             </div>
             <div>
