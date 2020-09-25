@@ -1,7 +1,8 @@
 import React from 'react';
-import '../styles/skills.scss';
+import { Display } from '../components/display';
 import Lottie from 'react-lottie-wrapper';
 import * as animationData from '../assets/json/developer-boy.json';
+import '../styles/skills.scss';
 
 const breakpoints = {
    sm: 600,
@@ -47,63 +48,51 @@ function getLottieDimensions(){
    else{
      return 400;
    }
- }
+}
 
-export class Skills extends React.Component{
+export const Skills = () => {
    
-   render(){
-      const defaultOptions = {
-         loop: true,
-         autoplay: true, 
-         animationData: animationData.default,
-         rendererSettings: {
-           preserveAspectRatio: 'xMidYMid slice'
-         }
-      };
-
-      return(
-         <section id="skills_section">
-            <div id='skills'>
-               <ul className='categories' id='coding'>
-                  <h1>Skills</h1>
-                  {
-                     skills.map((skill) => {
-                        return(
-                           <li>{skill}</li>
-                        );
-                     })
-                  }
-               </ul>
-               <ul className='categories' id='lingustics'>
-                  <h1>Linguistics</h1>
-                  <ul>
-                     <li><span className="languageProficiency">Fluent</span></li>
-                     <li>English</li>
-                  </ul>
-                  <ul>
-                     <li><span className="languageProficiency">Intermediate</span></li>
-                     <li>French</li><li>Mandarin</li>
-                  </ul>
-                  <ul>
-                     <li><span className="languageProficiency">Basic</span></li>
-                     <li>Japanese</li>
-                  </ul>
-               </ul>
-               <ul className='categories' id='interests'>
-                  <h1>Interests</h1>
-                  {
-                     interests.map((interest) => {
-                        return(
-                           <li>{interest}</li>
-                        );
-                     })
-                  }
-               </ul>
-            </div>
-            <div>
-               <Lottie options={ defaultOptions } height={ getLottieDimensions() } width={ getLottieDimensions() }/>
-            </div>
-         </section>
-      );
+   const defaultOptions = {
+      loop: true,
+      autoplay: true, 
+      animationData: animationData.default,
+      rendererSettings: {
+        preserveAspectRatio: 'xMidYMid slice'
+      }
    };
+
+
+   return(
+      <section id="skills_section">
+         <div id='skills'>
+            <ul className='categories' id='coding'>
+               <h1>Skills</h1>
+               <Display skills={skills}/>
+            </ul>
+            <ul className='categories' id='lingustics'>
+               <h1>Linguistics</h1>
+               <ul>
+                  <li><span className="languageProficiency">Fluent</span></li>
+                  <li>English</li>
+               </ul>
+               <ul>
+                  <li><span className="languageProficiency">Intermediate</span></li>
+                  <li>French</li><li>Mandarin</li>
+               </ul>
+               <ul>
+                  <li><span className="languageProficiency">Basic</span></li>
+                  <li>Japanese</li>
+               </ul>
+            </ul>
+            <ul className='categories' id='interests'>
+               <h1>Interests</h1>
+               <Display skills={interests}/>
+            </ul>
+         </div>
+         <div>
+            <Lottie options={ defaultOptions } height={ getLottieDimensions() } width={ getLottieDimensions() }/>
+         </div>
+      </section>
+   
+   );
 };

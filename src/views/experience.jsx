@@ -1,5 +1,4 @@
-import React from 'react';
-import '../styles/experience.scss';
+import React, { useState } from 'react';
 import { 
    Button, 
    Card, 
@@ -11,6 +10,7 @@ import {
    Grid,
    Typography 
 } from '@material-ui/core';
+import '../styles/experience.scss';
 
 const experiences = [
    {
@@ -46,75 +46,62 @@ const experiences = [
    }
 ]
 
-class Experience extends React.Component{
-   state = {
-      open: false,
-      cardIndex: 0
-   };
+const Experience = () => {
 
-   showContent(index){
-      this.setState({ open: true, cardIndex: index});
-   }
+   const [open, setOpen] = useState(false);
+   const [card, setCard] = useState(0)
 
-   closeContent(){
-      this.setState({ open: false });
-   }
-
-   render(){
-      return(
-         <section style={{ flexDirection: "column" }}>
-            <h1 id="experience_header">Click on a polaroid to learn more!</h1>
-            <Grid container id="polaroids" spacing={2}>
-               <Grid item xs={12}>
-                  <Grid container spacing={3} direction="row" justify="center"> 
-                     {
-                        experiences.map((experience, index) => {
-                           return(
-                              <Grid item key={index}>
-                                 <Card className="info_card" onClick={() => {this.showContent(index)}}>
-                                    <CardContent>
-                                       <CardMedia
-                                          style={{ height: 225, filter: "brightness(95%)" }}
-                                          image={ experience.thumbnail }
-                                       />
-                                       <br/>
-                                       <Typography className="typography" variant="subtitle2" color="textSecondary">
-                                          <p>{experience.date}</p>
-                                       </Typography>
-                                       <Typography className="typography" variant="h3">
-                                          <p>{experience.company}</p>
-                                       </Typography>
-                                       <Typography className="typography" variant="subtitle2" color="textSecondary">
-                                          <p>{experience.position}</p>
-                                       </Typography>
-                                    </CardContent>
-                                 </Card>
-                              </Grid>
-                           );
-                        })
-                     }
-                  </Grid>
+   return(
+      <section style={{ flexDirection: "column" }}>
+         <h1 id="experience_header">Click on a polaroid to learn more!</h1>
+         <Grid container id="polaroids" spacing={2}>
+            <Grid item xs={12}>
+               <Grid container spacing={3} direction="row" justify="center"> 
+                  {
+                     experiences.map((experience, index) => {
+                        return(
+                           <Grid item key={index}>
+                              <Card className="info_card" onClick={() => {setOpen(true); setCard(index);}}>
+                                 <CardContent>
+                                    <CardMedia
+                                       style={{ height: 225, filter: "brightness(95%)" }}
+                                       image={ experience.thumbnail }
+                                    />
+                                    <br/>
+                                    <Typography className="typography" variant="subtitle2" color="textSecondary">
+                                       <p>{ experience.date }</p>
+                                    </Typography>
+                                    <Typography className="typography" variant="h3">
+                                       <p>{ experience.company }</p>
+                                    </Typography>
+                                    <Typography className="typography" variant="subtitle2" color="textSecondary">
+                                       <p>{ experience.position }</p>
+                                    </Typography>
+                                 </CardContent>
+                              </Card>
+                           </Grid>
+                        );
+                     })
+                  }
                </Grid>
             </Grid>
-            <Dialog
-               open={this.state.open}
-               onClose={() => {this.closeContent()}}
-            >
-               <div style={{ background: "whitesmoke" }}>
-                  <DialogContent id="postcard">
-                        <img id="logo" src={ experiences[this.state.cardIndex].logo } alt="logo"/>
-                        <p>{ experiences[this.state.cardIndex].description }</p>
-                  </DialogContent>
-                  <DialogActions>
-                     <Button variant="outlined" color="secondary" onClick={() => {this.closeContent()}} autoFocus>
-                     Ok
-                     </Button>
-                  </DialogActions>
-               </div>
-            </Dialog>
-         </section>
-      );
-   }
+         </Grid>
+         <Dialog
+            open={open}
+            onClose={() => setOpen(false)}
+         >
+            <div style={{ background: "whitesmoke" }}>
+               <DialogContent id="postcard">
+                     <img id="logo" src={ experiences[card].logo } alt="logo"/>
+                     <p>{ experiences[card].description }</p>
+               </DialogContent>
+               <DialogActions>
+                  <Button variant="outlined" color="secondary" onClick={() => setOpen(false)}>Ok</Button>
+               </DialogActions>
+            </div>
+         </Dialog>
+      </section>
+   );
 }
 
 export { Experience };
