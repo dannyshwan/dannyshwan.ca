@@ -16,7 +16,7 @@ const experiences = [
    {
       company: "OpenText",
       position: "Software Engineer Intern",
-      thumbnail: require("../assets/img/thumbnails/opentext_thumbnail.jpg"),
+      thumbnail: require("../assets/img/thumbnails/opentext_thumbnail.jpeg"),
       date: "January 2020 - April 2020",
       logo: require("../assets/img/opentext.png"),
       description: `As an enterprise software engineer intern at OpenText in an agile environment, I was tasked with taking on multiple task
@@ -37,7 +37,7 @@ const experiences = [
    {
       company: "Mitel",
       position: "Software Developer Intern",
-      thumbnail: require("../assets/img/thumbnails/mitel_thumbnail.jpg"),
+      thumbnail: require("../assets/img/thumbnails/mitel_thumbnail.jpeg"),
       date: "May 2019 - August 2019",
       logo: require("../assets/img/mitel.png"),
       description: `At Mitel, I was a backend developer for the CloudLink team. There, I was tasked with projects involving issues
@@ -52,7 +52,7 @@ const Experience = () => {
    const [card, setCard] = useState(0)
 
    return(
-      <section style={{ flexDirection: "column" }}>
+      <section className='experience'>
          <h1 id="experience_header">Click on a polaroid to learn more!</h1>
          <Grid container id="polaroids" spacing={2}>
             <Grid item xs={12}>
@@ -64,7 +64,7 @@ const Experience = () => {
                               <Card className="info_card" onClick={() => {setOpen(true); setCard(index);}}>
                                  <CardContent>
                                     <CardMedia
-                                       style={{ height: 225, filter: "brightness(95%)" }}
+                                       style={{ height: 300, filter: "brightness(95%)" }}
                                        image={ experience.thumbnail }
                                     />
                                     <br/>

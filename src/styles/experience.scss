@@ -1,3 +1,7 @@
+.experience{
+   flex-direction: column;
+   
+}
 #experience_header{
    margin-bottom: 2rem;
    animation: hovering 1.5s ease;
@@ -21,15 +25,14 @@
    display: flex;
    min-height: 15rem;
    align-items: center;
+   flex-direction: column;
    
    p{
       padding: 20px;
-      width: 15rem;
-      font-family: 'Ubuntu', sans-serif;
-      border-left: 2px solid rgb(0, 135, 168);
+      width: 25rem;
+      font-family: 'Poppins', sans-serif;
 
       @media screen and (max-width: 600px){
-         border-top: 2px solid rgb(0, 135, 168);
          border-left: 0;
       }
    }
@@ -41,7 +44,6 @@
 
 .info_card{
    width: 25rem;
-   font-family: 'Ubuntu', sans-serif;
 
    @media screen and (max-width: 600px){
       width: 20rem;
@@ -50,11 +52,11 @@
 
 .info_card:hover{
    cursor: pointer;
-   
 }
 
 .typography p{
-   font-family: 'Catamaran', sans-serif;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 600;
    margin: 5px;
 }
 
