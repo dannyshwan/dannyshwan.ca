@@ -21,7 +21,7 @@ const Header = () => {
 
    return(
       <div id="header">
-         <div id="web_navigation" style={{ width: "100%",position: "relative"}}>
+         <div id="web_navigation">
             <Link id='returnHome' to='/'>Danny</Link>
             <div id='links'>
                <Link className='link' to='/about'>About</Link>

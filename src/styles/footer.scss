@@ -1,0 +1,34 @@
+#footer{
+   position:absolute;
+   bottom: 0;
+   width: 100%;
+   height: 15vh;
+   padding-bottom: 1rem;
+   @media screen and (max-width: 1200px){
+       height: 5vh;
+   }
+};
+
+#external_links{
+   width:100%;
+
+   @media screen and (max-width: 1200px){
+       display: none;
+   }
+};
+
+.image_links{
+   margin: 0 2rem;
+};
+
+.icons{
+   color: rgb(24, 24, 24);
+   opacity: 0.75;
+   font-size: 2rem;
+   transition: opacity 0.3s ease, transform 0.3s ease;
+};
+
+.icons:hover{
+   opacity: 1;
+   transform: translateY(-5px);
+};

@@ -1,5 +1,5 @@
 import React from 'react';
-import { InstagramOutlined, LinkedinFilled, MailOutlined, GithubOutlined } from '@ant-design/icons';
+import { Footer } from '../components/footer';
 import '../styles/home.scss';
 
 export const Home = () => {
@@ -12,15 +12,7 @@ export const Home = () => {
 				</div>
 				<img id="self-portrait" src={require("../assets/img/me.jpg")} alt="Picture_of_Me"/>
 			</div>
-			<div id="homeFooter">
-				<div id='external_links'>
-					<a className='image_links' href='https://www.instagram.com/daniel.shwan/' target='_blank' rel="noopener noreferrer"><InstagramOutlined className="icons"/></a>
-					<a className='image_links' href='https://github.com/dannyshwan' target='_blank' rel="noopener noreferrer"><GithubOutlined className="icons"/></a>
-					<a className='image_links' href='https://www.linkedin.com/in/danielshwan/' target='_blank' rel="noopener noreferrer"><LinkedinFilled className="icons"/></a>
-					<a className='image_links' href='mailto:dannyshwan@gmail.com'><MailOutlined className="icons"/></a>
-				</div>
-				<p style={{ fontSize: "1rem" }}> Made with ❤ by Daniel Shwan</p>
-			</div>
+			<Footer message="Made with ❤ by Daniel Shwan"/>
    	</section>
    );
 }
