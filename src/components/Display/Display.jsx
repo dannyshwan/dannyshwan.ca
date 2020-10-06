@@ -14,4 +14,4 @@ const Display = ({skills}) => {
    );
 }
 
-export { Display }
+export default Display;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Display } from '../components/display';
+import { Display } from '../components';
 import Lottie from 'react-lottie-wrapper';
 import * as animationData from '../assets/json/developer-boy.json';
 import '../styles/skills.scss';

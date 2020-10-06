@@ -1,6 +1,6 @@
 import React from 'react';
 import { InstagramOutlined, LinkedinFilled, MailOutlined, GithubOutlined } from '@ant-design/icons';
-import '../styles/footer.scss';
+import './Footer.scss';
 
 const Footer = ({message}) => {
    return(
@@ -15,4 +15,4 @@ const Footer = ({message}) => {
 		</div>
    );
 }
-export { Footer }
+export default Footer;
