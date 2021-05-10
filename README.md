@@ -6,7 +6,7 @@
     This portfolio was developed using the ReactJS library. 
     10/10 React experience
 
-    Made with love, Daniel Shwan ☕
+    Made with 爱, Daniel Shwan ☕
 ```
 
 DS Favicon Icon made by [Freepik](https://www.flaticon.com/authors/freepik) from www.flaticon.com

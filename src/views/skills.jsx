@@ -11,22 +11,25 @@ const breakpoints = {
 }
 
 const skills = [
-   "JavaScript",
-   "TypeScript",
+   "JavaScript/TypeScript",
    "Java",
    "Python",
    "C",
-   "HTML5/CSS3",
    "PHP",
    "AWS",
-   "React.js",
+   "React",
    "Vue.js",
-   "Angular.js",
-   "Node.js"
+   "Angular",
+   "Node.js",
+   "Express.js",
+   "Redux",
+   "PostgreSQL"
 ]
 
 const interests = [
    "Data Science",
+   "Machine Learning",
+   "UI/UX Design",
    "Full-Stack Development",
    "Product Development",
    "Soccer",

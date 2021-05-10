@@ -12,7 +12,7 @@ export const Home = () => {
 				</div>
 				<img id="self-portrait" src={require("../assets/img/me.jpg")} alt="Picture_of_Me"/>
 			</div>
-			<Footer message="Made with ❤ by Daniel Shwan"/>
+			<Footer message="Made with ❤ by Daniel Shwan (宣袁)"/>
    	</section>
    );
 }
