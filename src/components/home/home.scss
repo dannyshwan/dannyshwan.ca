@@ -36,7 +36,7 @@
 }
 
 #brush_stroke{
-    background: url('../assets/img/brush-stroke.png');
+    background: url('../../assets/img/brush-stroke.png');
     background-repeat: no-repeat;
     background-size: 100% 95%;
     padding: 1rem 7.5rem;
@@ -75,5 +75,5 @@
 
 @font-face{
     font-family: "Unforgotton";
-    src: url("../assets/fonts/unforgotten.regular.ttf");
+    src: url("../../assets/fonts/unforgotten.regular.ttf");
 }

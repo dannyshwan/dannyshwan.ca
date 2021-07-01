@@ -1,5 +1,5 @@
 import React from 'react';
-import { WebNavigation, MobileNavigation } from './Navigation';
+import { WebNavigation, MobileNavigation } from './navigation';
 import pdf from '../../assets/pdf/Daniel_Shwan.pdf';
 import './Header.scss';
 

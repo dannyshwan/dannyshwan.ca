@@ -1,8 +1,8 @@
 import React from 'react';
-import { Display } from '../components';
+import { Display } from './Display';
 import Lottie from 'react-lottie-wrapper';
-import * as animationData from '../assets/json/developer-boy.json';
-import '../styles/skills.scss';
+import * as animationData from '../../assets/json/developer-boy.json';
+import './skills.scss';
 
 const breakpoints = {
    sm: 600,

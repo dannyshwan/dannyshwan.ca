@@ -1,7 +1,7 @@
 import React from 'react';
 import Lottie from 'react-lottie-wrapper';
-import * as animationData from '../assets/json/soccer.json';
-import '../styles/about.scss';
+import * as animationData from '../../assets/json/soccer.json';
+import './about.scss';
 
 const breakpoints = {
   sm: 600,

@@ -1,3 +1,3 @@
-import { WebNavigation } from './WebNavigation';
-import { MobileNavigation } from './MobileNavigation';
+import { WebNavigation } from './webNavigation';
+import { MobileNavigation } from './mobileNavigation';
 export { WebNavigation, MobileNavigation };
