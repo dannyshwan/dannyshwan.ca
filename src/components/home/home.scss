@@ -36,7 +36,7 @@
 }
 
 #brush_stroke{
-    background: url('../assets/img/brush-stroke.png');
+    background: url('../../assets/img/brush-stroke.png');
     background-repeat: no-repeat;
     background-size: 100% 95%;
     padding: 1rem 7.5rem;
@@ -46,34 +46,7 @@
     }
 }
 
-#self-portrait{
-    width: 22.5vw;
-    margin-left: 2.5rem;
-    border-radius: 2rem;
-    box-shadow: 10px 10px rgba(122, 63, 181, 0.5);
-    transition: box-shadow 0.3s ease;
-
-    @media screen and (max-width: 1200px){
-        margin-left: 0;
-        transform: translateY(-100px);
-        width: 24.5rem;
-    }
-
-    @media screen and (max-width: 960px){
-        transform: translateY(-50px);
-        width: 22rem;
-    }
-
-    @media screen and (max-width: 600px){
-        width: 18rem;
-    }
-}
-
-#self-portrait:hover{
-    box-shadow: 5px 5px rgba(122, 63, 181, 0.5);
-}
-
 @font-face{
     font-family: "Unforgotton";
-    src: url("../assets/fonts/unforgotten.regular.ttf");
+    src: url("../../assets/fonts/unforgotten.regular.ttf");
 }

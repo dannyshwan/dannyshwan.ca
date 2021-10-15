@@ -1,9 +1,9 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
-import { Home } from '../views/home'
-import { About } from '../views/about';
-import { Experience } from '../views/experience';
-import { Skills } from '../views/skills';
+import { Home } from '../components/home/home'
+import { About } from '../components/about/about';
+import { Experience } from '../components/experience/experience';
+import { Skills } from '../components/skills/skills';
 
 export const Router = () => (
   <main>

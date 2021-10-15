@@ -1,6 +1,6 @@
 import React from 'react';
-import { Footer } from '../components';
-import '../styles/home.scss';
+import { Footer } from './Footer';
+import './home.scss';
 
 export const Home = () => {
 
@@ -10,7 +10,6 @@ export const Home = () => {
 				<div id="name">
 					<p style={{fontFamily: "Unforgotton"}}><span id="brush_stroke">Daniel Shwan</span></p>
 				</div>
-				<img id="self-portrait" src={require("../assets/img/me.jpg")} alt="Picture_of_Me"/>
 			</div>
 			<Footer message="Made with ❤ by Daniel Shwan (宣袁)"/>
    	</section>

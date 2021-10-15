@@ -1,8 +1,8 @@
 import React from 'react';
-import { Display } from '../components';
-import Lottie from 'react-lottie-wrapper';
-import * as animationData from '../assets/json/developer-boy.json';
-import '../styles/skills.scss';
+import { Display } from './Display';
+import Lottie from 'lottie-react'
+import readingBoy from '../../assets/json/reading_boy.json';
+import './skills.scss';
 
 const breakpoints = {
    sm: 600,
@@ -39,7 +39,7 @@ const interests = [
    "Sketching"
 ]
 
-function getLottieDimensions(){
+const getLottieDimensions = () => {
    const { innerWidth: width } = window;
  
    if (width <= breakpoints.sm){
@@ -54,16 +54,6 @@ function getLottieDimensions(){
 }
 
 export const Skills = () => {
-   
-   const defaultOptions = {
-      loop: true,
-      autoplay: true, 
-      animationData: animationData.default,
-      rendererSettings: {
-        preserveAspectRatio: 'xMidYMid slice'
-      }
-   };
-
 
    return(
       <section id="skills_section">
@@ -93,7 +83,7 @@ export const Skills = () => {
             </ul>
          </div>
          <div>
-            <Lottie options={ defaultOptions } height={ getLottieDimensions() } width={ getLottieDimensions() }/>
+            <Lottie animationData={readingBoy} initialSegment={[0,100]} height={getLottieDimensions()} width={getLottieDimensions()} loop={false}></Lottie>
          </div>
       </section>
    
