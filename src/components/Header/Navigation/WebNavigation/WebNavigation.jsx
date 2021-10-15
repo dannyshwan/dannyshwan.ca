@@ -9,7 +9,7 @@ const WebNavigation = ({ pdf }) => {
          <div id='links'>
             <Link className='link' to='/about'>About</Link>
             <Link className='link' to='/skills'>Skills</Link>
-            <Link className='link' to='/experience'>Experience</Link>
+            {/*<Link className='link' to='/experience'>Experience</Link>*/}
             <a className='link' href={ pdf } target="_blank" rel="noopener noreferrer">Resume</a>
          </div>
       </div>

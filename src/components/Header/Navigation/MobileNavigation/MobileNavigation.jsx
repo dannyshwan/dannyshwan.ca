@@ -31,7 +31,7 @@ const MobileNavigation = ({ pdf }) => {
             <li><Link className="mobile_links" to='/' onClick={() => closeMobileNav()}>HOME</Link></li>
             <li><Link className="mobile_links" to='/about' onClick={() => closeMobileNav()}>ABOUT</Link></li>
             <li><Link className="mobile_links" to='/skills' onClick={() => closeMobileNav()}>SKILLS</Link></li>
-            <li><Link className="mobile_links" to='/experience' onClick={() => closeMobileNav()}>EXPERIENCE</Link></li>
+            {/*<li><Link className="mobile_links" to='/experience' onClick={() => closeMobileNav()}>EXPERIENCE</Link></li>*/}
             <li><a className="mobile_links" href={ pdf } target="_blank" rel="noopener noreferrer">RESUME</a></li>
          </ul>
          <div id="mobile_external_links">
